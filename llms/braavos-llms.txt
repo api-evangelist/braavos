@@ -1,0 +1,35 @@
+# Braavos
+
+> Braavos is a self-custody smart-contract wallet for Bitcoin and Starknet, available as a browser extension and mobile app. It uses account abstraction on Starknet to add hardware-backed two-factor signing (mobile secure element / passkeys), session keys for dApps, gas abstraction, swaps, staking, and on-ramp. Developers integrate Braavos through the Starknet wallet API (get-starknet), Braavos account contracts, and the session-keys / deeplink / URL libraries published by the myBraavos GitHub organization.
+
+Braavos does not publish a hosted REST API or OpenAPI. Its developer surface is the injected Starknet wallet API, the Cairo account contracts, and first-party JavaScript libraries. Backed by Pantera Capital. Sector: crypto.
+
+## Developer libraries (npm, first-party)
+- [starknet-sessions](https://www.npmjs.com/package/starknet-sessions): Integrate dApps with Braavos account session keys (repo: https://github.com/myBraavos/session-keys)
+- [starknet-deeplink](https://www.npmjs.com/package/starknet-deeplink): StarkNet deeplink generator for payments, dApp launching, asset listing
+- [starknet-url](https://www.npmjs.com/package/starknet-url): Build and parse StarkNet URLs (ERC-681 / ERC-831 style)
+- [starknet-meta](https://www.npmjs.com/package/starknet-meta): Starknet dApps metadata repository
+
+## Smart contracts
+- [braavos-account-cairo](https://github.com/myBraavos/braavos-account-cairo): Braavos Account Contract for Starknet (Cairo)
+- [braavos-account-factory-cairo](https://github.com/myBraavos/braavos-account-factory-cairo): Braavos Account Factory for Starknet
+- [session-key-sample-dapp](https://github.com/myBraavos/session-key-sample-dapp): Sample dApp using session keys
+
+## Docs & product
+- [Braavos website](https://braavos.app/)
+- [Braavos blog](https://braavos.app/blog/)
+- [Braavos FAQ / help](https://braavos.app/faq/)
+- [Security](https://braavos.app/security/)
+- [Connect to Starknet dApps](https://braavos.app/connect-to-starknet-dapps/)
+- [Bug bounty program](https://braavos.app/braavos-wallet-bug-bounty-program/)
+- [GitHub organization (myBraavos)](https://github.com/myBraavos)
+
+## Community
+- [Discord](https://discord.com/invite/9Ks7V5DN9z)
+- [X / Twitter](https://x.com/myBraavos)
+- [Telegram](https://t.me/mybraavos)
+
+## API Evangelist artifacts
+- [Packages / SDKs](https://raw.githubusercontent.com/api-evangelist/braavos/refs/heads/main/packages/braavos-packages.yml)
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/braavos/refs/heads/main/security/braavos-domain-security.yml)
+- [Vulnerability disclosure](https://raw.githubusercontent.com/api-evangelist/braavos/refs/heads/main/security/braavos-vulnerability-disclosure.yml)

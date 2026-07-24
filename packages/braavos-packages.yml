@@ -1,0 +1,40 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/myBraavos + npm registry
+packages:
+  - language: javascript
+    registry: npm
+    name: starknet-sessions
+    url: https://www.npmjs.com/package/starknet-sessions
+    install: npm install starknet-sessions
+    version: 0.0.2
+    repository: https://github.com/myBraavos/session-keys
+    description: Library that lets dApps integrate with Braavos account session keys.
+    official: true
+  - language: javascript
+    registry: npm
+    name: starknet-deeplink
+    url: https://www.npmjs.com/package/starknet-deeplink
+    install: npm install starknet-deeplink
+    version: 1.0.2
+    repository: https://github.com/myBraavos/starknet-deeplink
+    description: StarkNet deeplink generator for payment requests, dApp launching, and asset listing.
+    official: true
+  - language: javascript
+    registry: npm
+    name: starknet-url
+    url: https://www.npmjs.com/package/starknet-url
+    install: npm install starknet-url
+    version: 1.0.2
+    repository: https://github.com/myBraavos/starknet-url
+    description: Build and parse StarkNet URLs (ERC-681 / ERC-831 style payment and function URLs).
+    official: true
+  - language: javascript
+    registry: npm
+    name: starknet-meta
+    url: https://www.npmjs.com/package/starknet-meta
+    install: npm install starknet-meta
+    version: 1.7.0
+    repository: https://github.com/myBraavos/starknet-meta
+    description: Starknet dApps metadata repository maintained by Braavos.
+    official: true

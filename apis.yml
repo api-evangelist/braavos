@@ -1,8 +1,14 @@
 aid: braavos
 name: Braavos
-description: 'Braavos is a company surfaced as a portfolio company of pantera-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Braavos is a self-custody smart-contract wallet for Bitcoin and Starknet,
+  available as a browser extension and mobile app. Built on Starknet account abstraction,
+  it adds hardware-backed two-factor signing (mobile secure element and passkeys),
+  session keys for dApps, gas abstraction, in-wallet swaps, staking, and fiat on-ramp.
+  Its developer surface is the injected Starknet wallet API (get-starknet), the Braavos
+  Cairo account contracts, and first-party JavaScript libraries (session keys, deeplinks,
+  StarkNet URLs, dApp metadata) published under the myBraavos GitHub organization.
+  Braavos does not publish a hosted REST API or OpenAPI. Sector: crypto. Backed by
+  Pantera Capital.'
 url: https://raw.githubusercontent.com/api-evangelist/braavos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,31 @@ x-backed-by:
 - pantera-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://braavos.app/wp-content/uploads/2023/01/braavos-logo.png
 tags:
 - Company
 - Crypto
+- Wallet
+- Blockchain
+- Starknet
+- Bitcoin
+- Self-Custody
+- Account Abstraction
+- Web3
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,30 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/braavos-domain-security.yml
 - type: Website
   url: https://braavos.app/
+- type: Blog
+  url: https://braavos.app/blog/
+- type: HelpCenter
+  url: https://braavos.app/faq/
+- type: Support
+  url: https://discord.com/invite/9Ks7V5DN9z
+- type: GitHubOrganization
+  url: https://github.com/myBraavos
+- type: Packages
+  url: packages/braavos-packages.yml
+- type: SDKs
+  url: packages/braavos-packages.yml
+- type: VulnerabilityDisclosure
+  url: security/braavos-vulnerability-disclosure.yml
+- type: Security
+  url: https://braavos.app/braavos-wallet-bug-bounty-program/
+- type: LLMsTxt
+  url: llms/braavos-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
